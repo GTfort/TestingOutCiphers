@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Two Input Fields</title>
+  </head>
+  <body>
+    <header>Fortune Tech Global</header>
+    <div class="center-form">
+      <form>
+        <label for="input1">Regular Input:</label><br />
+        <input type="text" id="input1" name="input1" /><br />
+        <label for="input2">Obvious Encryption:</label><br />
+        <input type="text" id="input2" name="input2" /><br />
+        <input onclick="openPopup() " type="submit" value="Click for Joke" />
+      </form>
+    </div>
+
+    <div class="pop-up" id="popup">
+      <h2>Here's a joke for you 😉</h2>
+      <p id="random-joke"></p>
+      <button type="button" onclick="closePopup()">Ok</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
